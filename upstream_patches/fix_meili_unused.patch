@@ -1,0 +1,14 @@
+diff --git a/valhalla/meili/state.h b/valhalla/meili/state.h
+index xxxx..xxxx 100644
+--- a/valhalla/meili/state.h
++++ b/valhalla/meili/state.h
+@@ -43,7 +43,7 @@ class StateContainer {
+   void RemoveInvalidStates(float sq_max_search_radius, float sq_search_radius, bool transition_back) {
+     std::vector<const State*> to_be_removed;
+     std::vector<const State*> unreachable;
+-    uint16_t found = 0;
++    uint16_t found __attribute__((unused)) = 0;
+     for (const auto& state : states_) {
+       if (!state.IsValid()) {
+         to_be_removed.push_back(&state);
+``` 

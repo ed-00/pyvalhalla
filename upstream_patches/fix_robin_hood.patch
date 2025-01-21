@@ -1,0 +1,11 @@
+diff --git a/third_party/robin-hood-hashing/src/include/robin_hood.h b/third_party/robin-hood-hashing/src/include/robin_hood.h
+index xxxx..xxxx 100644
+--- a/third_party/robin-hood-hashing/src/include/robin_hood.h
++++ b/third_party/robin-hood-hashing/src/include/robin_hood.h
+@@ -207,7 +207,7 @@
+ #if ROBIN_HOOD(CXX) >= ROBIN_HOOD(CXX17)
+ #    define ROBIN_HOOD_IS_TRIVIALLY_COPYABLE(...) std::is_trivially_copyable_v<__VA_ARGS__>
+ #else
+-#    define ROBIN_HOOD_IS_TRIVIALLY_COPYABLE(...) __has_trivial_copy(__VA_ARGS__)
++#    define ROBIN_HOOD_IS_TRIVIALLY_COPYABLE(...) __is_trivially_copyable(__VA_ARGS__)
+ #endif 

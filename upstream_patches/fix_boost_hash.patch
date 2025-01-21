@@ -1,0 +1,8 @@
+namespace boost
+{
+    namespace hash_detail
+    {
+        template <typename T>
+        struct hash_base { typedef T argument_type; typedef std::size_t result_type; };
+    }
+} 

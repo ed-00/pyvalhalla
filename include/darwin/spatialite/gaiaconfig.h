@@ -19,6 +19,12 @@
 /* Should be defined in order to enable GEOS_370 support. */
 #define GEOS_370 1
 
+/* Should be defined in order to enable GEOS_3100 support. */
+#define GEOS_3100 1
+
+/* Should be defined in order to enable GEOS_3110 support. */
+#define GEOS_3110 1
+
 /* Should be defined in order to enable GEOS_ADVANCED support. */
 #define GEOS_ADVANCED 1
 
@@ -56,7 +62,7 @@
 #define PROJ_NEW 1
 
 /* Should contain a text-string describing the intended target CPU */
-#define SPATIALITE_TARGET_CPU "x86_64-apple-darwin21.3.0"
+#define SPATIALITE_TARGET_CPU "arm64-apple-darwin24.0.0"
 
 /* the Version of this package */
-#define SPATIALITE_VERSION "5.0.1"
+#define SPATIALITE_VERSION "5.1.0"
